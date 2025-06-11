@@ -14,7 +14,7 @@ public class Transformer {
     // Приоритеты операторов
     private static int getPrecedence(String op) {
         return switch (op) {
-            case "+", "-" -> 3;
+            case "+", "-" -> 1;
             case "*", "/" -> 2;
             default -> 0;
         };
